@@ -1,0 +1,15 @@
+query MyQuery {
+  pokemon_v2_pokemon(where: {pokemon_v2_pokemongameindices: {pokemon_v2_version: {name: {_in: ["red", "blue", "leafgreen", "white"]}}}}) {
+    order
+    height
+    base_experience
+    id
+    name
+    weight
+    pokemon_v2_pokemontypes {
+      pokemon_v2_type {
+        name
+      }
+    }
+  }
+}

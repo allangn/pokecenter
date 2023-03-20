@@ -1,0 +1,12 @@
+query MyQuery {
+  pokemon_v2_pokemontypepast {
+    generation_id
+    pokemon_v2_pokemon {
+      name
+      id
+    }
+    pokemon_v2_type {
+      name
+    }
+  }
+}
